@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet1" targetNamespace="http://tempuri.org/DataSet1.xsd" xmlns:mstns="http://tempuri.org/DataSet1.xsd" xmlns="http://tempuri.org/DataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="AtmosphericAirConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="AtmosphericAirConnectionString (Settings)" PropertyReference="ApplicationSettings.AA.Properties.Settings.GlobalReference.Default.AtmosphericAirConnectionString" Provider="System.Data.Odbc" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="resultofmeasurmentsTableAdapter" GeneratorDataComponentClassName="resultofmeasurmentsTableAdapter" Name="resultofmeasurments" UserDataComponentName="resultofmeasurmentsTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="AtmosphericAirConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT "Name_of_units", "MIN", "AVG", "MAX", "Units" FROM "public"."resultofmeasurments"</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Name_of_units" DataSetColumn="Name_of_units" />
+              <Mapping SourceColumn="MIN" DataSetColumn="MIN" />
+              <Mapping SourceColumn="AVG" DataSetColumn="AVG" />
+              <Mapping SourceColumn="MAX" DataSetColumn="MAX" />
+              <Mapping SourceColumn="Units" DataSetColumn="Units" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_UserDSName="DataSet1" msprop:Generator_DataSetName="DataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="resultofmeasurments" msprop:Generator_RowEvHandlerName="resultofmeasurmentsRowChangeEventHandler" msprop:Generator_RowDeletedName="resultofmeasurmentsRowDeleted" msprop:Generator_RowDeletingName="resultofmeasurmentsRowDeleting" msprop:Generator_RowEvArgName="resultofmeasurmentsRowChangeEvent" msprop:Generator_TablePropName="resultofmeasurments" msprop:Generator_RowChangedName="resultofmeasurmentsRowChanged" msprop:Generator_RowChangingName="resultofmeasurmentsRowChanging" msprop:Generator_TableClassName="resultofmeasurmentsDataTable" msprop:Generator_RowClassName="resultofmeasurmentsRow" msprop:Generator_TableVarName="tableresultofmeasurments" msprop:Generator_UserTableName="resultofmeasurments">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Name_of_units" msprop:Generator_ColumnPropNameInRow="Name_of_units" msprop:Generator_ColumnPropNameInTable="Name_of_unitsColumn" msprop:Generator_ColumnVarNameInTable="columnName_of_units" msprop:Generator_UserColumnName="Name_of_units" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MIN" msprop:Generator_ColumnPropNameInRow="MIN" msprop:Generator_ColumnPropNameInTable="MINColumn" msprop:Generator_ColumnVarNameInTable="columnMIN" msprop:Generator_UserColumnName="MIN" type="xs:double" minOccurs="0" />
+              <xs:element name="AVG" msprop:Generator_ColumnPropNameInRow="AVG" msprop:Generator_ColumnPropNameInTable="AVGColumn" msprop:Generator_ColumnVarNameInTable="columnAVG" msprop:Generator_UserColumnName="AVG" type="xs:decimal" minOccurs="0" />
+              <xs:element name="MAX" msprop:Generator_ColumnPropNameInRow="MAX" msprop:Generator_ColumnPropNameInTable="MAXColumn" msprop:Generator_ColumnVarNameInTable="columnMAX" msprop:Generator_UserColumnName="MAX" type="xs:double" minOccurs="0" />
+              <xs:element name="Units" msprop:Generator_ColumnPropNameInRow="Units" msprop:Generator_ColumnPropNameInTable="UnitsColumn" msprop:Generator_ColumnVarNameInTable="columnUnits" msprop:Generator_UserColumnName="Units" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

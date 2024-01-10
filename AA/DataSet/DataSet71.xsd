@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet71" targetNamespace="http://tempuri.org/DataSet71.xsd" xmlns:mstns="http://tempuri.org/DataSet71.xsd" xmlns="http://tempuri.org/DataSet71.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="AtmosphericAirConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="AtmosphericAirConnectionString (Settings)" PropertyReference="ApplicationSettings.AA.Properties.Settings.GlobalReference.Default.AtmosphericAirConnectionString" Provider="System.Data.Odbc" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="view71TableAdapter" GeneratorDataComponentClassName="view71TableAdapter" Name="view71" UserDataComponentName="view71TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="AtmosphericAirConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT "city", "title", "valuemax" FROM "public"."view71"</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="city" DataSetColumn="city" />
+              <Mapping SourceColumn="title" DataSetColumn="title" />
+              <Mapping SourceColumn="valuemax" DataSetColumn="valuemax" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet71" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_UserDSName="DataSet71" msprop:Generator_DataSetName="DataSet71">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="view71" msprop:Generator_RowEvHandlerName="view71RowChangeEventHandler" msprop:Generator_RowDeletedName="view71RowDeleted" msprop:Generator_RowDeletingName="view71RowDeleting" msprop:Generator_RowEvArgName="view71RowChangeEvent" msprop:Generator_TablePropName="view71" msprop:Generator_RowChangedName="view71RowChanged" msprop:Generator_RowChangingName="view71RowChanging" msprop:Generator_TableClassName="view71DataTable" msprop:Generator_RowClassName="view71Row" msprop:Generator_TableVarName="tableview71" msprop:Generator_UserTableName="view71">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="city" msprop:Generator_ColumnPropNameInRow="city" msprop:Generator_ColumnPropNameInTable="cityColumn" msprop:Generator_ColumnVarNameInTable="columncity" msprop:Generator_UserColumnName="city" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="title" msprop:Generator_ColumnPropNameInRow="title" msprop:Generator_ColumnPropNameInTable="titleColumn" msprop:Generator_ColumnVarNameInTable="columntitle" msprop:Generator_UserColumnName="title" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="valuemax" msprop:Generator_ColumnPropNameInRow="valuemax" msprop:Generator_ColumnPropNameInTable="valuemaxColumn" msprop:Generator_ColumnVarNameInTable="columnvaluemax" msprop:Generator_UserColumnName="valuemax" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

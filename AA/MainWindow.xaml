@@ -1,0 +1,63 @@
+﻿<Window x:Class="AA.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:gif="http://wpfanimatedgif.codeplex.com"
+        xmlns:ReportViewerRDLC="clr-namespace:Microsoft.Reporting.WinForms;assembly=Microsoft.ReportViewer.WinForms"
+        xmlns:local="clr-namespace:AA"
+        mc:Ignorable="d"
+        Title="iAirQuality Pro" Height="600" Width="1000">
+    <Grid Name="LoginMenuGrid">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Rectangle Grid.Column="1" HorizontalAlignment="Left" Height="584" Margin="734,0,0,0" VerticalAlignment="Center" Width="266">
+            <Rectangle.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF395972" Offset="0"/>
+                    <GradientStop Color="#FF5FC6D5" Offset="1"/>
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+        <TextBox Name ="Login" HorizontalAlignment="Left" Margin="843,357,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Grid.Column="1" Height="18"/>
+        <Button Content="Вихід" Click="Exit_Click" Grid.ColumnSpan="2" Margin="881,492,19,33">
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Grid>
+                        <Border Background="LightBlue" CornerRadius="10" />
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Grid>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Button Content="Вхід" Click="Login_Click" Grid.ColumnSpan="2" Margin="767,492,133,33">
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Grid>
+                        <Border Background="LightBlue" CornerRadius="10" />
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Grid>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Label Name="test" Grid.Column="1" Content="Логін" HorizontalAlignment="Left" Margin="777,353,0,0" VerticalAlignment="Top" Height="26" Width="61" FontFamily="Arial Rounded MT Bold" Foreground="White"/>
+        <Label Grid.Column="1" Content="Пароль" HorizontalAlignment="Left" Margin="777,399,0,0" VerticalAlignment="Top" Height="26" Width="61" FontFamily="Arial Rounded MT Bold" Foreground="White"/>
+        <PasswordBox Name ="Password" Grid.Column="1" HorizontalAlignment="Left" Margin="843,403,0,0" VerticalAlignment="Top" Width="120" Height="18"/>
+        <Rectangle Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="217" Margin="180,75,0,0" VerticalAlignment="Top" Width="282">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="F:\Nubip\Sem_3.1\DB\AA\AA\Resources\logoDB.png"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Label Content="iAirQuality Pro" Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="188,352,0,0" VerticalAlignment="Top" Background="{x:Null}" FontFamily="Arial Rounded MT Bold" FontSize="36">
+            <Label.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF5FC6D5" Offset="0.986"/>
+                    <GradientStop Color="#FF395972" Offset="0"/>
+                </LinearGradientBrush>
+            </Label.Foreground>
+        </Label>
+        <Grid Grid.ColumnSpan="2"/>
+    </Grid>
+</Window>
