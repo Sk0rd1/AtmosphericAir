@@ -1,9 +1,9 @@
 # AtmosphericAir
- Мій курсовий проєкт на тему: "Моніторинг атмосферного повітря".
+My course project on the topic: "Atmospheric air monitoring".
 
-Під час розробки було використано технології: WPF(.NET), pgAdmin 4(PostgreSQL).
+The following technologies were used during development: WPF(.NET), pgAdmin 4(PostgreSQL).
 
-Деякі скріншоти, що відображають функціонал програми:
+Some screenshots showing the functional apps:
 ![Image alt](https://github.com/Sk0rd1/ImagesForReadMe/blob/main/AtmosphericAir/program1.jpg)
 
 ![Image alt](https://github.com/Sk0rd1/ImagesForReadMe/blob/main/AtmosphericAir/program2.jpg)
@@ -12,7 +12,7 @@
 
 ![Image alt](https://github.com/Sk0rd1/ImagesForReadMe/blob/main/AtmosphericAir/program4.jpg)
 
-Структура БД:
+Database structure:
 ![Image alt](https://github.com/Sk0rd1/ImagesForReadMe/blob/main/AtmosphericAir/ERD.jpg)
 
 ![Image alt](https://github.com/Sk0rd1/ImagesForReadMe/blob/main/AtmosphericAir/tables.jpg)
